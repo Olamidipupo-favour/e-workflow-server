@@ -2,6 +2,9 @@ import { router, util } from "../helpers/global.js"
 import RegisterAuth from "../services/registerAuth.js"
 import LogInAuth from "../services/loginAuth.js"
 import API_ROUTE from "../api-routes/index.js"
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const regAuth = new RegisterAuth()
 const loginAuth = new LogInAuth()
